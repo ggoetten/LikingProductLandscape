@@ -11,7 +11,19 @@ We are preparing a journal paper where LPL methodology can be described.
 
 - Download and install [anaconda distribution](https://www.anaconda.com)
 
-### Use of Liking Product Landscape
+### An example of the using of Liking Product Landscape
+
+First, it is needed to import the python libraries.
+```python
+import numpy as np
+import pandas
+```
+
+The LPL.py file in this repository, which contains the source code of LPL methodology, needs to be downloaded and paste in the actual project folder. For using the LPL code in a new code file, we must add the next line:
+
+```python
+from LPL import LikingProductLandscape
+```
 
 ```python
 import numpy as np
