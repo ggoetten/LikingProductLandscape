@@ -9,22 +9,37 @@ We are preparing a journal paper where LPL methodology can be described.
 
 ### Preparation for using LPL methodology 
 
-- Download and install anaconda distribution
+- Download and install anaconda distribution: anaconda.com
+
+### Use of Liking Product Landscape
 
 ```python
-# Importing EvoDAG ensemble
-from EvoDAG.model import EvoDAGE
-# Importing iris dataset from sklearn
-from sklearn.datasets import load_iris
+import numpy as np
+import pandas
+from LPL import LikingProductLandscape
 
-# Reading data
-data = load_iris()
-X = data.data
-y = data.target
+## Read the data
+X = pandas.read_csv('Experiments/Exp2/data/wine.csv').values
 
-#train the model
-m = EvoDAGE(n_estimators=30, n_jobs=4).fit(X, y)
+# Read the overall liking and attributes perception
+overall_liking = X[:,[10,16,22,28,34]]
+sweetness = X[:,[5,11,17,23,29]]
+acidity = X[:,[6,12,18,24,30]]
+astringency = X[:,[7,13,19,25,31]]
+body = X[:,[8,14,20,26,32]]
+fruity = X[:,[9,15,21,27,33]]
 
-#predict X using the model
-hy = m.predict(X)
+# Liking Product Landscape
+ol = overall_liking
+jar = np.concatenate((sweetness,acidity,astringency,body,fruity),axis=1)
+oljar = np.cocatenate((ol,jar),axis=1)
+
+lpl = LikingProductLandscape(oljar,consumers_map='MDS',preference_map='SVM')
+lpl.products_overall_liking(['W1','W2','W3','W4','W5'],overall_liking)
+lpl.attribute('Sweetness',sweetness)
+lpl.attribute('Acidity',acidity)
+lpl.attribute('Astringency',astringency)
+lpl.attribute('Body',body)
+lpl.attribute('Fruity',fruity)
+lpl.execute(filename='Experiments/Exp2/results/exp2_')
 ```
