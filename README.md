@@ -9,7 +9,7 @@ We are preparing a journal paper where LPL methodology can be described.
 
 ### Preparation for using LPL methodology 
 
-- Download and install anaconda distribution: anaconda.com
+- Download and install [anaconda distribution](https://www.anaconda.com)
 
 ### Use of Liking Product Landscape
 
