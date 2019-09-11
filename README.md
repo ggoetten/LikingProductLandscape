@@ -44,7 +44,7 @@ Then, we need to organize the data that corresponds to overall liking (ol), jar 
 ```python
 ol = overall_liking
 jar = np.concatenate((sweetness,acidity,astringency,body,fruity),axis=1)
-oljar = np.cocatenate((ol,jar),axis=1)
+oljar = np.concatenate((ol,jar),axis=1)
 ```
 
 The parameters of LikingProductLandscape must be defined. The data that will be used, it could be ol, jar, or oljar. The consumers' map technique, it could be 'MDS', 'IPM' or 'PCA'. The preference map technique, it could be 'Danzart' or 'SVM'. The recommended parameters are the ones showed in the sample line code:
@@ -91,7 +91,7 @@ fruity = X[:,[9,15,21,27,33]]
 # Liking Product Landscape
 ol = overall_liking
 jar = np.concatenate((sweetness,acidity,astringency,body,fruity),axis=1)
-oljar = np.cocatenate((ol,jar),axis=1)
+oljar = np.concatenate((ol,jar),axis=1)
 
 lpl = LikingProductLandscape(oljar,consumers_map='MDS',preference_map='SVM')
 lpl.products_overall_liking(['W1','W2','W3','W4','W5'],overall_liking)
