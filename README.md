@@ -27,7 +27,7 @@ from LPL import LikingProductLandscape
 
 It is recommended to capture the data in a .csv file, like the one in this repository Experiments/Exp2/data/wine.csv. For reading a .csv file the command pandas.read_csv can be used, specifically for the data in the experiment 2 we can use:
 ```python
-X = pandas.read_csv('Experiments/Exp2/data/wine.csv').values
+X = pandas.read_csv('Experiments/Exp2/exp2_wine_data.csv').values
 ```
 
 An important step is to read the consumers' evaluations from the file. It is recommended to use columns for evaluations and rows for consumers. Then, we can read the overall liking and the attributes evaluations indicating the column numbers. It is important to mention that first column corresponds to number 0. For example, for reading the evaluations of the data file Experiments/Exp2/data/wine.csv we use: 
@@ -78,7 +78,7 @@ import pandas
 from LPL import LikingProductLandscape
 
 ## Read the data
-X = pandas.read_csv('Experiments/Exp2/data/wine.csv').values
+X = pandas.read_csv('Experiments/Exp2/data/exp2_wine_data.csv').values
 
 # Read the overall liking and attributes perception
 overall_liking = X[:,[10,16,22,28,34]]
