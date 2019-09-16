@@ -78,7 +78,7 @@ import pandas
 from LPL import LikingProductLandscape
 
 ## Read the data
-X = pandas.read_csv('Experiments/Exp2/data/exp2_wine_data.csv').values
+X = pandas.read_csv('Experiments/Exp2/exp2_wine_data.csv').values
 
 # Read the overall liking and attributes perception
 overall_liking = X[:,[10,16,22,28,34]]
