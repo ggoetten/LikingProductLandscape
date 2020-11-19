@@ -10,4 +10,4 @@ In this project we are adding Hierarchical Clustering Dendogram, consumers class
 
 # Brief statement #
 
-This is a working in progress which we will hopefully add examples compared to our manuscript in order to be easier to understand the script
+This is a work in progress which we will hopefully add examples compared to our manuscript in order to be easier to understand the script
