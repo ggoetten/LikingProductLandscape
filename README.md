@@ -4,10 +4,10 @@ This project is forked from https://github.com/ClaudiaSanchez/LikingProductLands
 
 # Description #
 
-Even though the example from the project of Dr. Sánchez is very good, it does not uses all its functions.
+We complement the example from the project of Dr. Sánchez, which is very good but that it does not uses all of its functions.
 
 In this project we are adding Hierarchical Clustering Dendogram, consumers classifications grouped by colour, clustering groups with Mean ± S.D. and spatial distribution around the map landscape
 
-# Brief statement #
+# Statement #
 
-This is a work in progress which we will hopefully add examples compared to our manuscript in order to be easier to understand the script
+This modified script, which is a subtopic of our manuscript, is now being revised along with the manuscript in a peer-review international journal. In order to understand how the script works, we added detailed instructions in the folder “Tutorial as to how to produce the results” inside the Experiments main folder.
