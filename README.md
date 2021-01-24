@@ -11,3 +11,4 @@ In this project we are adding Hierarchical Clustering Dendogram, consumers class
 # Statement #
 
 This modified script, which is a subtopic of our manuscript, is now being revised along with the manuscript in a peer-review international journal. In order to understand how the script works, we added detailed instructions in the folder “Tutorial as to how to produce the results” inside the Experiments main folder.
+If you use this work to your publication, please kindly cite this using the following doi: 10.5281/zenodo.4458769	
